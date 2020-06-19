@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <a href="{{ url_for('add_vendor') }}">Add New Vendor</a>
+    <h1>Existing Vendors</h1>
+    {% for vendor in vendors %}
+    <div>
+        <span>
+            <a href="{{ url_for('vendor_page', vendor_id=vendor.id) }}">{{ vendor.name }}</a>
+        </span>
+    </div>
+    {% endfor %}
+{% endblock %}

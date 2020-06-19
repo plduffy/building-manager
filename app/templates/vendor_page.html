@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<a href="{{ url_for('vendors') }}">Back to Vendors</a><br>
+<h1>{{ vendor.name }}</h1>
+<p>{{ vendor.email }}</p>
+<p>{{ vendor.phone_number }}</p>
+
+{% endblock %}

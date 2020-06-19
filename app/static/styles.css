@@ -1,0 +1,21 @@
+.tile-collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto; }
+    .tile-collection .tile {
+      border-right: 1px solid #DCE2EA;
+      display: flex;
+      flex-direction: column;
+      min-width: 150px;
+      padding-right: 40px;
+      margin-right: 16px; }
+      .tile-collection .tile:last-child {
+        border-right: none; }
+      .tile-collection .tile .value {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.4px; }
+      .tile-collection .tile .label {
+        color: #819299;
+        font-size: 14px;
+        letter-spacing: 0.5px; }
